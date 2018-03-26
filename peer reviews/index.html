@@ -131,18 +131,9 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                     </a>
-                    <div class="btn-group" id="carouselButtons">
-                        <button class="btn btn-danger btn-small" id="carouselPause">
-                            <i class="fa fa-pause"></i>
-                        </button>
-                        <button class="btn btn-danger btn-small" id="carouselPlay">
-                            <i class="fa fa-play"></i>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
-        
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3 flex-last">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -324,16 +315,11 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
     <script>
-       $(document).ready(function(){
-            $("#mycarousel").carousel({interval: 2000});
-            $("#carouselPause").click(function(){
-                $("#mycarousel").carousel('pause');
-            });
-            $("#carouselPlay").click(function(){
-                $("#mycarousel").carousel('cycle');
-            });
-       });
+        $(document).ready(function){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
     </script>
 </body>
 
