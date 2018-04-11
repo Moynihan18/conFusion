@@ -13,5 +13,14 @@ $(document).ready(function(){
                 $("#carousel-button").children("span").addClass('fa-pause');                    
         }
     });
-});
+    $("#modal-button").click(function(){
+        $("#reserveModal").modal("show");
+    });
+    $("#login-link").click(function(){
+        $("#loginModal").modal("show");
+    });
+
+});    
+
+
 
